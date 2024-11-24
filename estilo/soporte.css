@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos del menú superior */
+header {
+    background-color: #1a2730;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 0 25px;
+}
+
+.navbar-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Fondo oscuro para el navbar */
+.navbar {
+    background-color: #34495e;
+}
+
+/* Efecto hover */
+.navbar-menu a:hover {
+    background-color: #ff6f00; 
+    color: white;
+}
+
+body {
+    padding-top: 5px;
+}
+
+/* Contenedor principal */
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #34495e;
+    margin-top: 60px;
+}
+
+/* Estilo del formulario */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+
+form label {
+    font-size: 1.2em;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 15px;
+    width: 100%;
+    max-width: 100%; 
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1.1em;
+    background-color: #ffffff;
+    color: #333;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Evitar que el textarea se expanda demasiado */
+form textarea {
+    resize: vertical;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #ff6f00;
+    box-shadow: 0 0 8px rgba(255, 111, 0, 0.4);
+}
+/* Estilos para el mensaje de éxito */
+#mensajeExito {
+    position: absolute;
+    top: -60px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    text-align: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.contenido {
+    position: relative;
+    padding-top: 70px; 
+}
+
+/* Botón de envío */
+form button {
+    padding: 15px 25px;
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%; 
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; 
+}
+
+form button:hover {
+    background-color: #e55d00;
+}

@@ -1,0 +1,230 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos del menú superior (navbar) */
+header {
+    background-color: #1a2730;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 0 25px;
+}
+
+.navbar-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Fondo oscuro para el navbar */
+.navbar {
+    background-color: #34495e;
+}
+
+/* Efecto hover */
+.navbar-menu a:hover {
+    background-color: #ff6f00; 
+    color: white;
+}
+
+/* Estilo del body para no quedar tapado por el navbar */
+body {
+    padding-top: 80px; 
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 60px auto; 
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;  
+    margin-right: 20px;
+}
+
+/* Contenedor de la barra de búsqueda */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* Estilos del formulario de búsqueda */
+.search-bar form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo de la entrada de texto */
+.search-bar input[type="text"] {
+    padding: 10px;
+    font-size: 1.1em;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Estilo del botón de búsqueda */
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para el botón de "Listar Todos" */
+.search-bar form input[type="hidden"] {
+    display: none;
+}
+
+.search-bar form button {
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar form button:hover {
+    background-color: #c0392b;
+}
+
+/* Estilos de la tabla de usuarios */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; 
+    margin-top: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezados de la tabla */
+th, td {
+    padding: 18px;
+    text-align: left;
+    font-size: 1.1em;
+    color: #333;
+    font-weight: 400;
+}
+
+/* Encabezados */
+th {
+    background-color: #34495e;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Filas alternadas con fondo claro */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Efecto hover en las filas */
+tr:hover {
+    background-color: #ecf0f1;
+}
+
+/* Estilo de los enlaces de acciones */
+td a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+td a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Estilo de la página si no hay resultados */
+.no-results {
+    text-align: center;
+    font-size: 1.5em;
+    color: #e74c3c;
+    padding: 30px;
+    background: #fce4e4;
+    border-radius: 12px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    table {
+        margin-top: 20px;
+    }
+
+    th, td {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    td a {
+        font-size: 0.9em;
+        padding: 6px 10px;
+    }
+}
